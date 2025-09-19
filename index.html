@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codexo - Soluções em Software Personalizado</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container">
+            <a href="#inicio" class="logo">
+                <img alt="</> Codexo">
+            </a>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#processo">Nosso Processo</a></li>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <a href="#contato" class="btn btn-primary">Solicitar Orçamento</a>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="animate-on-scroll">Transformamos Ideias em Realidade Digital.</h1>
+                    <p class="animate-on-scroll">Criamos software sob medida que impulsiona o crescimento e a eficiência da sua empresa. Inovação, design e tecnologia para resolver seus desafios mais complexos.</p>
+                    <a href="#servicos" class="btn btn-secondary animate-on-scroll">Conheça Nossas Soluções</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="servicos" class="services">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll">Soluções que Criamos para Você</h2>
+                <div class="services-grid">
+                    <div class="service-card animate-on-scroll">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>Sistemas Web Personalizados</h3>
+                        <p>Plataformas robustas e escaláveis, desde painéis administrativos a sistemas complexos de gestão (ERP/CRM), acessíveis de qualquer lugar.</p>
+                    </div>
+                    <div class="service-card animate-on-scroll">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>Aplicativos Mobile (iOS/Android)</h3>
+                        <p>Desenvolvemos aplicativos nativos e híbridos com foco total na experiência do usuário, conectando sua marca ao seu cliente na palma da mão.</p>
+                    </div>
+                    <div class="service-card animate-on-scroll">
+                        <i class="fas fa-cloud"></i>
+                        <h3>Integração e Automação</h3>
+                        <p>Conectamos suas ferramentas existentes, automatizamos processos manuais e otimizamos seu fluxo de trabalho para máxima produtividade.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="processo" class="process">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll">Nosso Caminho para o Sucesso</h2>
+                <div class="process-timeline">
+                    <div class="process-step animate-on-scroll">
+                        <div class="process-icon"><i class="fas fa-lightbulb"></i></div>
+                        <h4>1. Análise e Estratégia</h4>
+                        <p>Mergulhamos no seu negócio para entender seus objetivos e desafios. Definimos juntos o escopo e a estratégia do projeto.</p>
+                    </div>
+                    <div class="process-step animate-on-scroll">
+                        <div class="process-icon"><i class="fas fa-pencil-ruler"></i></div>
+                        <h4>2. Design (UI/UX)</h4>
+                        <p>Criamos interfaces intuitivas e modernas, focadas na melhor experiência para o usuário final, através de protótipos interativos.</p>
+                    </div>
+                    <div class="process-step animate-on-scroll">
+                        <div class="process-icon"><i class="fas fa-code"></i></div>
+                        <h4>3. Desenvolvimento Ágil</h4>
+                        <p>Codificamos sua solução com as melhores tecnologias, em ciclos rápidos que permitem feedbacks e ajustes constantes.</p>
+                    </div>
+                    <div class="process-step animate-on-scroll">
+                        <div class="process-icon"><i class="fas fa-rocket"></i></div>
+                        <h4>4. Lançamento e Suporte</h4>
+                        <p>Implementamos o software, treinamos sua equipe e oferecemos suporte contínuo para garantir performance e evolução.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="about">
+            <div class="container">
+                <div class="about-content">
+                    <h2 class="section-title animate-on-scroll">Somos a Codexo.</h2>
+                    <p class="animate-on-scroll">Nascemos da paixão por tecnologia e da vontade de resolver problemas reais. Não somos apenas desenvolvedores; somos parceiros estratégicos que se dedicam ao sucesso do seu negócio. Nosso time de 5 especialistas une criatividade e expertise técnica para entregar software que não apenas funciona, mas encanta.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="contact">
+            <div class="container">
+                <h2 class="section-title animate-on-scroll">Vamos Conversar?</h2>
+                <p class="animate-on-scroll">Envie-nos uma mensagem e vamos descobrir como a Codexo pode ajudar a levar sua empresa para o próximo nível.</p>
+                <form class="contact-form animate-on-scroll">
+                    <input type="text" placeholder="Seu nome" required>
+                    <input type="email" placeholder="Seu melhor e-mail" required>
+                    <textarea placeholder="Conte-nos sobre seu projeto..." rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Codexo. Todos os direitos reservados.</p>
+            <div class="social-links">
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/CodexoTecnologiaLTDA" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
