@@ -535,6 +535,16 @@ section {
     cursor: pointer;
 }
 
+.logo-icon {
+    color: var(--primary-color); /* Deixa o ícone roxo */
+    font-weight: 700; /* Deixa o ícone um pouco mais grosso */
+    margin-right: 8px; /* Adiciona um pequeno espaço entre o ícone e o texto */
+}
+
+.logo-text {
+    color: var(--primary-color); /* Garante que o texto fique branco */
+}
+
 /* --- SEÇÃO HERO --- */
 /* --- SEÇÃO HERO --- */
 .hero {
