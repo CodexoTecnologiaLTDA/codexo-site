@@ -32,11 +32,29 @@ document.addEventListener('DOMContentLoaded', () => {
     elementsToAnimate.forEach(el => observer.observe(el));
 
     // LÓGICA SIMPLES PARA O FORMULÁRIO DE CONTATO
-    const contactForm = document.querySelector('.contact-form');
+    /*const contactForm = document.querySelector('.contact-form');
     contactForm.addEventListener('submit', (e) => {
         e.preventDefault(); // Impede o recarregamento da página
         alert('Obrigado pelo seu contato! Retornaremos em breve.');
         contactForm.reset(); // Limpa o formulário
+    });*/
+
+    // LÓGICA DE RETORNO FORMSPREE
+    document.querySelector('.contact-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        var form = this;
+        fetch(form.action, {
+            method: 'POST',
+            body: new FormData(form),
+            headers: { 'Accept': 'application/json' }
+        }).then(function(response) {
+            if (response.ok) {
+                alert('Obrigado pelo seu contato! Retornaremos em breve!');
+                form.reset();
+            } else {
+                alert('Ocorreu um erro ao enviar. Tente novamente.');
+            }
+        });
     });
 
 });

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Codexo - Soluções em Software Personalizado</title>
+    <title>Codexo Teste 2- Soluções em Software Personalizado</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -110,10 +110,11 @@
             <div class="container">
                 <h2 class="section-title animate-on-scroll">Vamos Conversar?</h2>
                 <p class="animate-on-scroll">Envie-nos uma mensagem e vamos descobrir como a Codexo pode ajudar a levar sua empresa para o próximo nível.</p>
-                <form class="contact-form animate-on-scroll">
-                    <input type="text" placeholder="Seu nome" required>
-                    <input type="email" placeholder="Seu melhor e-mail" required>
-                    <textarea placeholder="Conte-nos sobre seu projeto..." rows="5" required></textarea>
+                <!-- Alterado apenas formulário e incluído retorno se foi enviado e-mail com sucesso -->
+                <form class="contact-form animate-on-scroll" action="https://formspree.io/f/xnnberyp" method="POST">
+                    <input type="text" name="name" placeholder="Seu nome" required>
+                    <input type="email" name="email" placeholder="Seu melhor e-mail" required>
+                    <textarea name="message" placeholder="Conte-nos sobre seu projeto..." rows="5" required></textarea>
                     <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
                 </form>
             </div>
