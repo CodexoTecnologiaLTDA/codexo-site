@@ -40,7 +40,7 @@
             <div class="container">
                 <div class="hero-content">
                     <h1 class="animate-on-scroll">Transformamos Ideias em Realidade Digital.</h1>
-                    <p class="animate-on-scroll">Criamos software sob medida que impulsiona o crescimento e a eficiência da sua empresa. Inovação, design e tecnologia para resolver seus desafios mais complexos.</p>
+                    <p class="animate-on-scroll">Criamos softwares sob medida que impulsionam o crescimento e a eficiência da sua empresa. Utilizamos inovação, design e tecnologia para resolver seus desafios mais complexos.</p>
                     <a href="#servicos" class="btn btn-secondary animate-on-scroll">Conheça Nossas Soluções</a>
                 </div>
             </div>
@@ -110,10 +110,11 @@
             <div class="container">
                 <h2 class="section-title animate-on-scroll">Vamos Conversar?</h2>
                 <p class="animate-on-scroll">Envie-nos uma mensagem e vamos descobrir como a Codexo pode ajudar a levar sua empresa para o próximo nível.</p>
-                <form class="contact-form animate-on-scroll">
-                    <input type="text" placeholder="Seu nome" required>
-                    <input type="email" placeholder="Seu melhor e-mail" required>
-                    <textarea placeholder="Conte-nos sobre seu projeto..." rows="5" required></textarea>
+                <!-- Alterado apenas formulário e incluído retorno se foi enviado e-mail com sucesso -->
+                <form class="contact-form animate-on-scroll" action="https://formspree.io/f/xnnberyp" method="POST">
+                    <input type="text" name="name" placeholder="Seu nome" required>
+                    <input type="email" name="email" placeholder="Seu melhor e-mail" required>
+                    <textarea name="message" placeholder="Conte-nos sobre seu projeto..." rows="5" required></textarea>
                     <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
                 </form>
             </div>
@@ -126,7 +127,7 @@
             <div class="social-links">
                 <a href="https://www.linkedin.com/company/codexo-tecnologia" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                 <a href="https://github.com/CodexoTecnologiaLTDA" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.instagram.com/codexotecnologia?igsh=ZnJqeTBiZHAzNW14" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
     </footer>
